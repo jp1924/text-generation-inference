@@ -2874,6 +2874,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "outlines-core"
+version = "0.1.0"
+source = "git+https://github.com/dottxt-ai/outlines-core.git?rev=ba10c619fc9bf3c487e43f49bdecb95a24bb465c#ba10c619fc9bf3c487e43f49bdecb95a24bb465c"
+dependencies = [
+ "anyhow",
+ "regex",
+ "serde-pyobject",
+ "serde_json",
+]
+
+[[package]]
 name = "overload"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3807,6 +3818,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "serde-pyobject"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ca4b0aad8b225845739a0030a0d5cc2ae949c56a86a7daf9226c7df7c2016d16"
+dependencies = [
+ "pyo3",
+ "serde",
+]
+
+[[package]]
 name = "serde_cbor"
 version = "0.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3833,6 +3854,7 @@ version = "1.0.132"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d726bfaff4b320266d395898905d0eba0345aae23b54aee3a737e260fd46db03"
 dependencies = [
+ "indexmap 2.6.0",
  "itoa",
  "memchr",
  "ryu",
@@ -4270,6 +4292,7 @@ dependencies = [
 name = "text-generation-router"
 version = "2.4.1-dev0"
 dependencies = [
+ "anyhow",
  "async-stream",
  "async-trait",
  "axum 0.7.7",
@@ -4293,6 +4316,7 @@ dependencies = [
  "once_cell",
  "opentelemetry 0.20.0",
  "opentelemetry-otlp",
+ "outlines-core",
  "pyo3",
  "rand",
  "regex",
